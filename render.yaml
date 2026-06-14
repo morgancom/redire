@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: redirect-server
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: REDIRECT_URL
+        value: https://bluemoodpeptides.pythonanywhere.com
